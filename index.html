@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SahilBhatiya</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+
+</head>
+<body>
+
+<div class="container">
+      <div class="navbar">
+        <div class="menu">
+          <h2 class="logo">Ahmedabad  <span>Coder</span></h2>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+
+            </div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="main">
+          <header>
+
+            <div class="overlay">
+
+              <div class="inner">
+
+                <h2 class="title"><font>Sa</font><span>hil</span> Bhatiya</h2>
+                <p>L D COLLEGE OF ENGINEERING</p>
+                <div id="time">
+  
+                </div>
+                <button class="btn"><a href="about.html"> Read more</a></button>
+
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="shadow one"></div>
+        <div class="shadow two"></div>
+      </div>
+
+      <div class="links">
+        <ul>
+          <li>
+            <a href="index.html" style="--i: 0.05s;">Home</a>
+          </li>
+          <li>
+            <a href="skills.html" style="--i: 0.1s;">Skills</a>
+          </li>
+          <li>
+            <a href="cyber.html" style="--i: 0.15s;">Cyber Security</a>
+          </li>
+          <li>
+            <a href="project.html" style="--i: 0.2s;">Projects</a>
+          </li>
+          <li>
+            <a href="about.html" style="--i: 0.25s;">About</a>
+          </li>
+          <li>
+            <a href="contact.html" style="--i: 0.3s;">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+<script>
+	var welcome;  
+    var date = new Date();  
+    var hour = date.getHours();  
+    var minute = date.getMinutes();  
+    var second = date.getSeconds();  
+    
+    if (hour < 12) {  
+      welcome = "Good morning";  
+    } else if (hour < 17) {  
+      welcome = "Good afternoon";  
+    } else if (hour < 21) {  
+      welcome = "Good evening";  
+    }  
+    else{
+      welcome = "Good Night"
+    }
+    document.getElementById('time').innerHTML ="Hello "+ welcome +" "+hour + ":" + minute + ":" + second;
+</script>
+<script>
+	const hamburger_menu = document.querySelector(".hamburger-menu");
+	const container = document.querySelector(".container");
+	hamburger_menu.addEventListener("click", () => {
+  container.classList.toggle("active");
+  
+});
+
+
+</script>
+</body>
+</html>

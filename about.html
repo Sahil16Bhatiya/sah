@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SahilBhatiya</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+
+</head>
+<body>
+
+<div class="container">
+      <div class="navbar">
+        <div class="menu">
+          <h2 class="logo">Ahmedabad  <span>Coder</span></h2>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+
+            </div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="main">
+         <section class="introduction-section">
+    <h1>Introduction</h1>
+    <p>I am a Student of L D College of Engineering, part Web Designer, and soon to be web developer.</p>
+    <p>I love the Internet , Technology, and Building Beautiful Things.</p>
+</section>
+<section class="location-section">
+    <h1>Where I'm From</h1>
+    <p>I'm from Ahmedabad, Gujarat. </p>
+</section>
+<section class="questions-section">
+    <h1>More About Me</h1>
+    
+    <p>My favorite hobby is building things on the internet like ecommerce sites and cyber security attecks.</p>
+   
+    <p>My dream job is similar to my current job except I would like to be building website / software instead of buildings.</p>
+    
+    
+    <h2>Why do you want to be a web developer?</h2>
+    <p>Because programming is awesome and programming for the internet is even more awesome.</p>
+</section>
+
+<footer class="content-footer">
+    <p>Say hi to me on these social networks:</p>
+    <ul class="social">
+        <li><a class="css-is-deranged" href="_INSERT_GITHUB_URL_HERE_">GitHub</a></li>
+        <li><a class="css-is-deranged" href="_INSERT_TWITTER_URL_HERE_">Instagram</a></li>
+        <li><a class="css-is-deranged" href="_INSERT_GOOGLE+_URL_HERE_">Facebook</a></li>
+    </ul>
+  
+</footer>
+        </div>
+        <div class="shadow one"></div>
+        <div class="shadow two"></div>
+      </div>
+
+      <div class="links">
+        <ul>
+          <li>
+            <a href="index.html" style="--i: 0.05s;">Home</a>
+          </li>
+          <li>
+            <a href="skills.html" style="--i: 0.1s;">Skills</a>
+          </li>
+          <li>
+            <a href="cyber.html" style="--i: 0.15s;">Cyber Security</a>
+          </li>
+          <li>
+            <a href="project.html" style="--i: 0.2s;">Projects</a>
+          </li>
+          <li>
+            <a href="about.html" style="--i: 0.25s;">About</a>
+          </li>
+          <li>
+            <a href="contact.html" style="--i: 0.3s;">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+<script>
+	var welcome;  
+    var date = new Date();  
+    var hour = date.getHours();  
+    var minute = date.getMinutes();  
+    var second = date.getSeconds();  
+    
+    if (hour < 12) {  
+      welcome = "Good morning";  
+    } else if (hour < 17) {  
+      welcome = "Good afternoon";  
+    } else if (hour < 21) {  
+      welcome = "Good evening";  
+    }  
+    else{
+      welcome = "Good Night"
+    }
+    document.getElementById('time').innerHTML ="Hello "+ welcome +" "+hour + ":" + minute + ":" + second;
+</script>
+<script>
+	const hamburger_menu = document.querySelector(".hamburger-menu");
+	const container = document.querySelector(".container");
+	hamburger_menu.addEventListener("click", () => {
+  container.classList.toggle("active");
+  
+});
+
+
+</script>
+</body>
+</html>

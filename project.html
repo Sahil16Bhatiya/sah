@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SahilBhatiya</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+
+</head>
+<body>
+
+<div class="container">
+      <div class="navbar">
+        <div class="menu">
+          <h2 class="logo">Ahmedabad  <span>Coder</span></h2>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+
+            </div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="main">
+         <section class="Projects">
+<a name="project"></a>
+  <div class="pcontent">
+     <div class="pitem">
+      <img src="bgm.png">
+         <h3>Js Based Project</h3>
+         <p>BGM Player 🔊</p>
+         <button><a href="https://sahil16bhatiya.github.io/BGMPlayer/" target="_blank"> Show Site </a></button>
+     </div>
+      <div class="pitem">
+      <img src="sah.jpg">
+         <h3>Latest Portfolio</h3>
+         <p>Web Develpment</p>
+         <button><a href="https://sahil16bhatiya.github.io/Portfolio/" target="_blank"> Show Site</a></button>
+     </div>
+      <div class="pitem">
+      <img src="rs.png">
+         <h3>DE Project</h3>
+         <p>Insurance Measure Sem3 (Just Prototype)</p>
+         <button><a href="https://sahil16bhatiya.github.io/insurance_measure/" target="_blank"> Show Site</a></button>
+     </div>
+      <div class="pitem">
+      <img src="h.jpg" height="200px">
+         <h3>Horror</h3>
+         <p>Just For Fun</p>
+         <button><a href="https://sahil16bhatiya.github.io/horr/" target="_blank"> Show Site</a></button>
+     </div>
+
+        <div class="pitem">
+      <img src="pcard.png" height="200px" id="card">
+         <h3>HTML And Css based</h3>
+         <p>Profile Card</p>
+         <button><a href="https://sahil16bhatiya.github.io/Profile-Card/" target="_blank"> Show Site</a></button>
+     </div>
+      <div class="pitem">
+      <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/366577i4F851B60F8347ED4" height="200px" id="card">
+         <h3>Hackthone Project (Team) </h3>
+         <p>Women Walfare Schemes <br>(work in Process)</p>
+         <button><a href="https://sahil16bhatiya.github.io/SahilAB/" target="_blank"> Show Site</a></button>
+     </div>
+  </div>
+  
+</section>
+        </div>
+        <div class="shadow one"></div>
+        <div class="shadow two"></div>
+      </div>
+
+      <div class="links">
+        <ul>
+          <li>
+            <a href="index.html" style="--i: 0.05s;">Home</a>
+          </li>
+          <li>
+            <a href="skills.html" style="--i: 0.1s;">Skills</a>
+          </li>
+          <li>
+            <a href="cyber.html" style="--i: 0.15s;">Cyber Security</a>
+          </li>
+          <li>
+            <a href="project.html" style="--i: 0.2s;">Projects</a>
+          </li>
+          <li>
+            <a href="about.html" style="--i: 0.25s;">About</a>
+          </li>
+          <li>
+            <a href="contact.html" style="--i: 0.3s;">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+<script>
+	var welcome;  
+    var date = new Date();  
+    var hour = date.getHours();  
+    var minute = date.getMinutes();  
+    var second = date.getSeconds();  
+    
+    if (hour < 12) {  
+      welcome = "Good morning";  
+    } else if (hour < 17) {  
+      welcome = "Good afternoon";  
+    } else if (hour < 21) {  
+      welcome = "Good evening";  
+    }  
+    else{
+      welcome = "Good Night"
+    }
+    document.getElementById('time').innerHTML ="Hello "+ welcome +" "+hour + ":" + minute + ":" + second;
+</script>
+<script>
+	const hamburger_menu = document.querySelector(".hamburger-menu");
+	const container = document.querySelector(".container");
+	hamburger_menu.addEventListener("click", () => {
+  container.classList.toggle("active");
+  
+});
+
+
+</script>
+</body>
+</html>
