@@ -1,0 +1,86 @@
+html {
+    background: black;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+
+	body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+	}
+	.msg {
+  font-family: monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3vh;
+  background: red;
+  box-shadow: 0 0 30px red;
+  text-shadow: 0 0 20px white;
+  color: white;
+  width: 20vw;
+  height: 7vh;
+  position: absolute;
+  left: 50%;
+  margin-left: -10vw;
+  top: 50%;
+  margin-top: -5vh;
+  text-align: center;
+  min-width: 200px;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.kali
+{
+  background: #111;
+  box-shadow: 0 0 30px yellowgreen;
+  text-shadow: 0 0 20px white;
+  color: white;
+  width: 20vw;
+  height: 19vh;
+  position: absolute;
+  left: 50%;
+  margin-left: -10vw;
+  top: 70%;
+  margin-top: -5vh;
+  text-align: center;
+  min-width: 200px;
+  cursor: pointer;
+  padding: 20px;
+}
+#bt 
+{
+  width: 100px;
+  font-size: 1em;
+  background-color: #111;
+  color: red;
+  box-shadow: 0 0 30px yellowgreen;
+  text-shadow: 0 0 20px white;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+	html
+	{
+		overflow: hidden;
+	}
+	.msg
+	{
+		margin-left: -100px;
+	}
+
+}
