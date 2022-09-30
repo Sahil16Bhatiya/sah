@@ -786,10 +786,14 @@ form {
 
 @media only screen and (max-width: 600px) {
 
-html
+html , body
 {
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+.container
+{
+  overflow: hidden;
 }
 .logo
 {
@@ -801,6 +805,11 @@ html
   width: 100%;
   text-align: center;
 
+}
+.btn
+{
+  position: relative;
+  top: -10px;
 }
 .time
 {
